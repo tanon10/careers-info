@@ -1,7 +1,14 @@
+---
+export interface Props {
+  imgPortada: string;
+}
+const { imgPortada = "" } = Astro.props;
+---
+
 <section class="relative mb-6 h-96 flex justify-center item-center">
   <div
     class="bg-cover bg-center absolute w-full h-full overflow-hidden opacity-60"
-    style="background-image: url('/frontisunjfsc.jpg')"
+    style={{ "background-image": `url(${imgPortada})` }}
   >
   </div>
   <div
