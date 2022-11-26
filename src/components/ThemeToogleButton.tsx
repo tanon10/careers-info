@@ -17,6 +17,7 @@ export default function ThemeToggle() {
     }
     return "light";
   });
+
   const toggleTheme = () => {
     const t = theme === "light" ? "dark" : "light";
     localStorage.setItem("theme", t);
@@ -37,7 +38,7 @@ export default function ThemeToggle() {
   }, []);
 
   return isMounted ? (
-    <div className="inline-flex items-center p-[1px] rounded-3xl bg-orange-300 dark:bg-zinc-600">
+    <div className="inline-flex items-center p-[1px] rounded-3xl bg-bgdark text-white dark:bg-zinc-600">
       {themes.map((t) => {
         const checked = t === theme;
         return (

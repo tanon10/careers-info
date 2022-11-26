@@ -1,23 +1,23 @@
 ---
 import HeaderLink from "./HeaderLink.astro";
-import { SITE_TITLE } from "../config";
 import ThemeToggle from "./ThemeToogleButton";
 ---
 
-<header class="fixed w-full p-2 z-20 backdrop-blur-md">
-  <div class="font-mvoll mx-auto max-w-3xl">
+<header class="fixed w-full p-2 z-20 bg-bgprimary dark:bg-bgdark">
+  <div class="font-mvoll mx-auto max-w-5xl">
     <nav class="flex items-center gap-3 text-base">
       <a href="/">
         <h2 class="font-bold tracking-tighter p-2 text-lg">
-          <img
-            class="w-12 h-12"
-            src="../../public/logouniversidad.png"
-            alt="logo_unjfsc"
-          />
+          <img class="w-auto h-12" src="/logouni.png" alt="logo_unjfsc" />
         </h2>
       </a>
-      <div class="text-base items-center gap-6 hidden md:flex">
-        <HeaderLink href="/about">About</HeaderLink>
+      <div
+        class="text-xl font-semibold text-cyan-100 items-center gap-6 hidden md:flex"
+      >
+        <HeaderLink href="/about">Nosotros</HeaderLink>
+        <HeaderLink target="_blank" href="https://intranet.unjfsc.edu.pe/"
+          >Intranet</HeaderLink
+        >
       </div>
       <div class="flex-1"></div>
       <ThemeToggle client:visible />

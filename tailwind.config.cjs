@@ -8,7 +8,7 @@ module.exports = {
         mvoll: ["'Vollkorn'", "Verdana", "sans-serif"],
       },
       colors: {
-        bgprimary: "#3FB9FC",
+        bgprimary: "#6491c8",
         bgdark: "#0F2D3D",
       },
     },
