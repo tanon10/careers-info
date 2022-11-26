@@ -7,6 +7,10 @@ module.exports = {
       fontFamily: {
         mvoll: ["'Vollkorn'", "Verdana", "sans-serif"],
       },
+      colors: {
+        bgprimary: "#3FB9FC",
+        bgdark: "#0F2D3D",
+      },
     },
   },
   plugins: [],

@@ -1,25 +1,26 @@
 ---
-import HeaderLink from './HeaderLink.astro';
-import { SITE_TITLE } from '../config';
+import HeaderLink from "./HeaderLink.astro";
+import { SITE_TITLE } from "../config";
+import ThemeToggle from "./ThemeToogleButton";
 ---
 
-<header>
-	<h2>
-		{SITE_TITLE}
-	</h2>
-	<nav>
-		<HeaderLink href="/">Home</HeaderLink>
-		<HeaderLink href="/blog">Blog</HeaderLink>
-		<HeaderLink href="/about">About</HeaderLink>
-		<HeaderLink href="https://twitter.com/astrodotbuild" target="_blank">Twitter</HeaderLink>
-		<HeaderLink href="https://github.com/withastro/astro" target="_blank">GitHub</HeaderLink>
-	</nav>
+<header class="fixed w-full p-2 z-20 backdrop-blur-md">
+  <div class="font-mvoll mx-auto max-w-3xl">
+    <nav class="flex items-center gap-3 text-base">
+      <a href="/">
+        <h2 class="font-bold tracking-tighter p-2 text-lg">
+          <img
+            class="w-12 h-12"
+            src="../../public/logouniversidad.png"
+            alt="logo_unjfsc"
+          />
+        </h2>
+      </a>
+      <div class="text-base items-center gap-6 hidden md:flex">
+        <HeaderLink href="/about">About</HeaderLink>
+      </div>
+      <div class="flex-1"></div>
+      <ThemeToggle client:visible />
+    </nav>
+  </div>
 </header>
-<style>
-	header {
-		margin: 0em 0 2em;
-	}
-	h2 {
-		margin: 0.5em 0;
-	}
-</style>
