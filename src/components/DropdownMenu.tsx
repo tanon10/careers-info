@@ -38,14 +38,14 @@ export default function DropdownMenu() {
             <div className="px-3 py-2 uppercase font-bold italic text-xs">
               Facultades
             </div>
+            <DropdownMenuItem href="/facultad/bromatologia-nutricion">
+              Bromatologia y Nutrición
+            </DropdownMenuItem>
             <DropdownMenuItem href="/facultad/ciencias">
               Ciencias
             </DropdownMenuItem>
             <DropdownMenuItem href="/facultad/educacion">
               Educacion
-            </DropdownMenuItem>
-            <DropdownMenuItem href="/facultad/bromatologia-nutricion">
-              Bromatologia y Nutrición
             </DropdownMenuItem>
           </div>
         </Menu.Items>
