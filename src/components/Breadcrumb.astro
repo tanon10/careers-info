@@ -1,0 +1,16 @@
+---
+import { IoChevronForward } from "react-icons/io5/index.js";
+---
+
+<div class="y-4 flex items-center gap-1">
+  <a
+    href="/"
+    class="bg-gray-700 text-gray-300 text-sm font-medium mr-2 px-2.5 py-0.5 rounded-full dark:bg-bgprimary"
+    >Home</a
+  >
+  <IoChevronForward className="opacity-50" />
+  <span
+    class="bg-bgprimary text-gray-300 text-sm font-medium mr-2 px-2.5 py-0.5 rounded-full dark:bg-gray-700"
+    ><slot />
+  </span>
+</div>

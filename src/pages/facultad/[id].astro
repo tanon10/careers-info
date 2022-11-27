@@ -1,73 +1,75 @@
 ---
+import CategoryPosts from "../../layouts/CategoryPosts.astro";
+
 export function getStaticPaths() {
-  const categories = [
+  const facultad = [
     {
       id: "bromatologia-nutricion",
       name: "Bromatologia y Nutricion",
-      imgPortada: "./bromatologia/bromatologia.jpg",
+      imgPortada: "/bromatologia/bromatologia.jpg",
     },
     {
       id: "ciencias",
       name: "Ciencias",
-      imgPortada: "./ciencias/ciencias.jpg",
+      imgPortada: "/ciencias/ciencias.jpg",
     },
     {
       id: "ciencias-economicas",
       name: "Ciencias Economicas, Contabilidad y Financieras",
-      imgPortada: "./economicas/cienciaseconomicas.jpg",
+      imgPortada: "/economicas/cienciaseconomicas.jpg",
     },
     {
       id: "ciencias-empresariales",
       name: "Ciencias Empresariales",
-      imgPortada: "./empresariales/cienciasempresariales.jpg",
+      imgPortada: "/empresariales/cienciasempresariales.jpg",
     },
     {
       id: "ciencias-sociales",
       name: "Ciencias Sociales",
-      imgPortada: "./sociales/cienciassociales.jpg",
+      imgPortada: "/sociales/cienciassociales.jpg",
     },
     {
       id: "ciencias-politicas",
       name: "Derecho y Ciencias Politicas",
-      imgPortada: "./derecho/derecho.jpg",
+      imgPortada: "/derecho/derecho.jpg",
     },
     {
       id: "educacion",
       name: "Educación",
-      imgPortada: "./educacion/educacion.jpg",
+      imgPortada: "/educacion/educacion.jpg",
     },
     {
       id: "agraria-alimentaria-ambiental",
       name: "Ingenieria Agraria, Industria alimentaria y Ambiental",
-      imgPortada: "./agraria/ingagraria.jpg",
+      imgPortada: "/agraria/ingagraria.jpg",
     },
     {
       id: "civil",
       name: "Ingenieria Civil",
-      imgPortada: "./civil/civil.jpg",
+      imgPortada: "/civil/civil.jpg",
     },
     {
       id: "industrial-sistemas-informatica",
       name: "Ingenieria Industrial, Sistemas e Informática",
-      imgPortada: "./industrial/findustrial.jpg",
+      imgPortada: "/industrial/findustrial.jpg",
     },
     {
       id: "pesquera",
       name: "Ingenieria Pesquera",
-      imgPortada: "./pesquera/fpesquera.jpg",
+      imgPortada: "/pesquera/fpesquera.jpg",
     },
     {
       id: "quimica-metalurgica",
       name: "Ingenieria Quimica y Metalurgica",
-      imgPortada: "./metalurgica/fmetalurgica.jpg",
+      imgPortada: "/metalurgica/fmetalurgica.jpg",
     },
     {
       id: "medicina-humana",
       name: "Medicina Humana",
-      imgPortada: "./medicina/fmedicina.jpg",
+      imgPortada: "/medicina/fmedicina.jpg",
     },
   ];
-  return categories.map(({ id, name, imgPortada }) => {
+  return facultad.map(({ id, name, imgPortada }) => {
     return {
       params: { id },
       props: { name, imgPortada },
@@ -75,5 +77,7 @@ export function getStaticPaths() {
   });
 }
 
-const { id, name, imgPortada } = Astro.props;
+const { name, imgPortada } = Astro.props;
 ---
+
+<CategoryPosts category={name} imgCat={imgPortada} />

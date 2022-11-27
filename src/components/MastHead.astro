@@ -1,23 +1,16 @@
 ---
 export interface Props {
-  imgPortada: string;
+  portada: string;
 }
-const { imgPortada = "" } = Astro.props;
+const { portada = "" } = Astro.props;
 ---
 
-<section class="relative mb-6 h-96 flex justify-center item-center">
+<section
+  class="relative mb-6 md:h-[700px] h-96 flex justify-center item-center"
+>
   <div
-    class="bg-cover bg-center absolute w-full h-full overflow-hidden opacity-60"
-    style={{ "background-image": `url(${imgPortada})` }}
+    class="md:bg-cover md:bg-center bg-cover bg-center absolute w-full h-full overflow-hidden opacity-60"
+    style={{ "background-image": `url(${portada})` }}
   >
-  </div>
-  <div
-    class="grid z-10 text-center px-8 drop-shadow-lg shadow-black place-content-center"
-  >
-    <div class="text-3xl text-white sm:text-5xl font-mvoll font-medium">
-      Bienvenido alumno <span class="text-bgdark dark:text-orange-400"
-        >Faustiniano</span
-      >
-    </div>
   </div>
 </section>
