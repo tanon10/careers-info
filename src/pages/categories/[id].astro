@@ -1,0 +1,79 @@
+---
+export function getStaticPaths() {
+  const categories = [
+    {
+      id: "bromatologia-nutricion",
+      name: "Bromatologia y Nutrición",
+      imgPortada: "./bromatologia/bromatologia.jpg",
+    },
+    {
+      id: "ciencias",
+      name: "Ciencias",
+      imgPortada: "./ciencias/ciencias.jpg",
+    },
+    {
+      id: "ciencias-economicas",
+      name: "Ciencias Economicas, Contabilidad y Financieras",
+      imgPortada: "./economicas/cienciaseconomicas.jpg",
+    },
+    {
+      id: "ciencias-empresariales",
+      name: "Ciencias Empresariales",
+      imgPortada: "./empresariales/cienciasempresariales.jpg",
+    },
+    {
+      id: "ciencias-sociales",
+      name: "Ciencias Sociales",
+      imgPortada: "./sociales/cienciassociales.jpg",
+    },
+    {
+      id: "ciencias-politicas",
+      name: "Derecho y Ciencias Politicas",
+      imgPortada: "./derecho/derecho.jpg",
+    },
+    {
+      id: "educacion",
+      name: "Educacion",
+      imgPortada: "./educacion/educacion.jpg",
+    },
+    {
+      id: "agraria-alimentaria-ambiental",
+      name: "Ingenieria Agraria, Industria alimentaria y Ambiental",
+      imgPortada: "./agraria/ingagraria.jpg",
+    },
+    {
+      id: "civil",
+      name: "Ingenieria Civil",
+      imgPortada: "./civil/civil.jpg",
+    },
+    {
+      id: "industrial-sistemas-informatica",
+      name: "Ingenieria Industrial, Sistemas e Informática",
+      imgPortada: "./industrial/findustrial.jpg",
+    },
+    {
+      id: "pesquera",
+      name: "Ingenieria Pesquera",
+      imgPortada: "./pesquera/fpesquera.jpg",
+    },
+    {
+      id: "quimica-metalurgica",
+      name: "Ingenieria Quimica y Metalurgica",
+      imgPortada: "./metalurgica/fmetalurgica.jpg",
+    },
+    {
+      id: "medicina-humana",
+      name: "Medicina Humana",
+      imgPortada: "./medicina/fmedicina.jpg",
+    },
+  ];
+  return categories.map(({ id, name, imgPortada }) => {
+    return {
+      params: { id },
+      props: { name, imgPortada },
+    };
+  });
+}
+
+const { name, imgPortada } = Astro.props;
+---

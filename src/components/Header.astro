@@ -1,4 +1,5 @@
 ---
+import DropdownMenu from "./DroodownMenu";
 import HeaderLink from "./HeaderLink.astro";
 import ThemeToggle from "./ThemeToogleButton";
 ---
@@ -21,6 +22,7 @@ import ThemeToggle from "./ThemeToogleButton";
       </div>
       <div class="flex-1"></div>
       <ThemeToggle client:visible />
+      <DropdownMenu client:visible />
     </nav>
   </div>
 </header>
