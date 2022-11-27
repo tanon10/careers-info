@@ -29,23 +29,53 @@ export default function DropdownMenu() {
       >
         <Menu.Items
           className="absolute right-0 z-10 mt-2 w-56 
-        origin-top-right rounded-md border dark:border-bgprimary
-        border-zinc-700 bg-zinc-600 text-white  shadow-xl 
-        ring-1 ring-black ring-opacity-5 focus:outline-none 
-        divide-zinc-400 dark:divide-zinc-700"
+          origin-top-right rounded-md border dark:border-bgprimary
+          border-zinc-700 bg-zinc-600 text-white  shadow-xl 
+          ring-1 ring-black ring-opacity-5 focus:outline-none 
+          divide-zinc-400 dark:divide-zinc-700"
         >
           <div className="py-1">
             <div className="px-3 py-2 uppercase font-bold italic text-xs">
               Facultades
             </div>
-            <DropdownMenuItem href="/facultad/bromatologia-nutricion">
-              Bromatologia y Nutrición
+            <DropdownMenuItem href="facultad/bromatologia-nutricion">
+              Bromatologia y Nutricion
             </DropdownMenuItem>
-            <DropdownMenuItem href="/facultad/ciencias">
+            <DropdownMenuItem href="facultad/ciencias">
               Ciencias
             </DropdownMenuItem>
-            <DropdownMenuItem href="/facultad/educacion">
-              Educacion
+            <DropdownMenuItem href="facultad/ciencias-economicas">
+              Ciencias Economicas, Contabilidad y Financieras
+            </DropdownMenuItem>
+            <DropdownMenuItem href="facultad/ciencias-empresariales">
+              Ciencias Empresariales
+            </DropdownMenuItem>
+            <DropdownMenuItem href="facultad/ciencias-sociales">
+              Ciencias Sociales
+            </DropdownMenuItem>
+            <DropdownMenuItem href="facultad/ciencias-politicas">
+              Derecho y Ciencias Politicas
+            </DropdownMenuItem>
+            <DropdownMenuItem href="facultad/educacion">
+              Educación
+            </DropdownMenuItem>
+            <DropdownMenuItem href="agraria-alimentaria-ambiental">
+              Ingenieria Agraria, Industria alimentaria y Ambiental
+            </DropdownMenuItem>
+            <DropdownMenuItem href="facultad/civil">
+              Ingenieria Civil
+            </DropdownMenuItem>
+            <DropdownMenuItem href="industrial-sistemas-informatica">
+              Ingenieria Industrial, Sistemas e Informática
+            </DropdownMenuItem>
+            <DropdownMenuItem href="facultad/pesquera">
+              Ingenieria Pesquera
+            </DropdownMenuItem>
+            <DropdownMenuItem href="facultad/quimica-metalurgica">
+              Ingenieria Quimica y Metalurgica
+            </DropdownMenuItem>
+            <DropdownMenuItem href="facultad/medicina-humana">
+              Medicina Humana
             </DropdownMenuItem>
           </div>
         </Menu.Items>

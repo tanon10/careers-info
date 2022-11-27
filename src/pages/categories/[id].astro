@@ -3,7 +3,7 @@ export function getStaticPaths() {
   const categories = [
     {
       id: "bromatologia-nutricion",
-      name: "Bromatologia y Nutrición",
+      name: "Bromatologia y Nutricion",
       imgPortada: "./bromatologia/bromatologia.jpg",
     },
     {
@@ -33,7 +33,7 @@ export function getStaticPaths() {
     },
     {
       id: "educacion",
-      name: "Educacion",
+      name: "Educación",
       imgPortada: "./educacion/educacion.jpg",
     },
     {
@@ -75,5 +75,5 @@ export function getStaticPaths() {
   });
 }
 
-const { name, imgPortada } = Astro.props;
+const { id, name, imgPortada } = Astro.props;
 ---
