@@ -11,3 +11,16 @@
 	text-rendering: optimizeLegibility;
 	overflow-wrap: break-word; /*desborde de lineas*/
 }
+
+/* h1,h2,h3{
+	color: gold;
+}
+
+p{
+	margin-bottom: 10px;
+}
+li{
+	margin-bottom: 5px;
+	font-style: italic;
+	font-size: larger;
+} */
