@@ -4,7 +4,7 @@ title: "Derecho y Ciencias Políticas"
 facultad: "FACULTAD DE DERECHO Y CIENCIAS POLITICAS"
 heroImage: "/derecho/derecho.jpeg"
 tags:
-  - Ciencias
+  - Derecho y Ciencias Politicas
 ---
 
 Egresar de Derecho y Ciencias Políticas te permitirá solucionar conflictos con un enfoque innovador del derecho, analizar e interpretar las normas jurídicas y aplicarlas debidamente en el contexto que te desempeñarás sea a nivel privado o público.

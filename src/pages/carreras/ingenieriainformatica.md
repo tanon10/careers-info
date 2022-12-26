@@ -1,6 +1,6 @@
 ---
 layout: "../../layouts/BlogPost.astro"
-title: "Ingeniería de Sistemas"
+title: "Ingeniería Informática"
 facultad: "FACULTAD DE INGENIERÍA INDUSTRIAL, SISTEMAS E INFOMÁTICA"
 heroImage: "/industrial/informatica.jpeg"
 tags:
