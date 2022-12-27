@@ -2,7 +2,7 @@
 layout: "../../layouts/BlogPost.astro"
 title: "Física"
 facultad: "FACULTAD DE CIENCIAS"
-heroImage: "/empresariales/administracion.jpeg"
+heroImage: "/ciencias/fisica.jpeg"
 tags:
   - Ciencias
 ---
